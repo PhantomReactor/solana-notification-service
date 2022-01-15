@@ -41,6 +41,13 @@ const Notifications = () => {
 
 	return (
 		<StyledDiv>
+			<h4>
+				Please download and install the cleint apk from{' '}
+				<a href="https://github.com/PhantomReactor/sns-android/raw/main/apk/app-release.apk">
+					<span>here</span>
+				</a>{' '}
+				to receive the notifications
+			</h4>
 			<img src={notificationLogo} alt="notification bell"></img>
 			<input
 				placeholder="destination address"
@@ -74,6 +81,9 @@ const StyledDiv = styled.div`
 	justify-content: center;
 	gap: 2rem;
 	height: 90vh;
+	h4 {
+		font-size: 25px;
+	}
 	input {
 		all: unset;
 		width: 50vh;
