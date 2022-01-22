@@ -43,7 +43,7 @@ const Notifications = () => {
 		<StyledDiv>
 			<h4>
 				Please download and install the client apk from{' '}
-				<a href="https://github">
+				<a href="https://github.com/PhantomReactor/solana-notification-service/raw/master/apk/app-release.apk">
 					<span>here</span>
 				</a>{' '}
 				and switch to devnet to receive notifications
