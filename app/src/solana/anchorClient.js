@@ -26,6 +26,7 @@ const sendNotification = async ({ title, message, wallet, destination }) => {
 	const program = new Program(idl, programID, provider);
 	const notificationAccount = web3.Keypair.generate();
 	let users = await getSubscribedUsers(connection);
+
 	if (users.length === 0) {
 		return 'No wallets found to send notifications';
 	}

@@ -41,6 +41,13 @@ const Notifications = () => {
 
 	return (
 		<StyledDiv>
+			<h4>
+				Please download and install the client apk from{' '}
+				<a href="https://github">
+					<span>here</span>
+				</a>{' '}
+				and switch to devnet to receive notifications
+			</h4>
 			<img src={notificationLogo} alt="notification bell"></img>
 			<input
 				placeholder="destination address"
@@ -107,6 +114,9 @@ const StyledDiv = styled.div`
 	}
 	img {
 		height: 5rem;
+	}
+	h4 {
+		font-size: 2rem;
 	}
 `;
 export default Notifications;
